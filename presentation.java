@@ -2,6 +2,8 @@
 
 public class WriteCustomerlist{
 
+    // declare variables 
+    
     int idNumber;
     String firstName;
     String lastName;
@@ -15,7 +17,7 @@ public class WriteCustomerlist{
         this.balance = balance;
     }
 
-
+                      // concatenate 
     public String toString() {
         return idNumber + "," + firstName + "," + lastName + "," + balance;
     }
@@ -36,7 +38,7 @@ public class WriteCustomerlist{
 
     public static void main(String[] args) throws IOException {
 
-        BufferedWriter writer=new BufferedWriter(new FileWriter(new File("D:/customer.txt")));
+        BufferedWriter writer=new BufferedWriter(new FileWriter(new File("D:/Writecustomerlist.txt")));
         for(int i=0;i<5;i++)
         {
             Scanner scanner=new Scanner(System.in);
